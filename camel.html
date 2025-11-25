@@ -1,0 +1,116 @@
+<html lang="fa" dir="rtl">
+<head>
+    <link href="camel.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کبابی خانی</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- نوار آدرس -->
+    <div class="address-bar">
+        <span>📍 آدرس ما:</span>
+        <span>خیابان مدرس، بین مدرس 11 و 13 — کبابی خانی (شعبه اول)</span>
+        <span>چهارراه بهبودی — کبابی خانی (شعبه دوم)</span>
+    </div>
+
+    <!-- هدر -->
+    <header>
+        <div class="logo">کبابی خانی</div>
+
+        <nav class="menu">
+            <a href="#products">محصولات</a>
+            <a href="#order">سفارش آنلاین</a>
+            <a href="#contact">تماس با ما</a>
+        </nav>
+
+        <div class="menu-btn" id="menuBtn">☰</div>
+    </header>
+
+    <!-- موبایل منو -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#products">محصولات</a>
+        <a href="#order">سفارش آنلاین</a>
+        <a href="#contact">تماس با ما</a>
+    </div>
+
+    <!-- بخش اصلی -->
+    <section class="hero">
+        <h1 class="fade">غذای اصیل ایرانی</h1>
+        <h2 class="fade">طعم واقعی کباب</h2>
+        <img class="hero-img fade" src="photo_2024-09-30_17-34-45.jpg" alt="لوگو">
+        <button class="order-btn" onclick="scrollToOrder()">همین حالا سفارش دهید</button>
+    </section>
+
+    <!-- عنوان محصولات -->
+    <div class="title" id="products">محصولات ما</div>
+
+    <!-- محصولات -->
+    <section class="products">
+        <div class="card">
+            <img src="download (2).jpg">
+            <h2>کباب کوبیده</h2>
+        </div>
+
+        <div class="card">
+            <img src="download (3).jpg">
+            <h2>جوجه کباب</h2>
+        </div>
+
+        <div class="card">
+            <img src="download (4).jpg">
+            <h2>جگر</h2>
+        </div>
+
+        <div class="card">
+            <img src="download (5).jpg">
+            <h2>بال و پاچین</h2>
+        </div>
+
+        <div class="card">
+            <img src="download (6).jpg">
+            <h2>چربی</h2>
+        </div>
+    </section>
+
+    <!-- سفارش -->
+    <section class="order-section" id="order">
+        <h2>ثبت سفارش آنلاین</h2>
+
+        <div class="order-box">
+            <input type="text" id="name" placeholder="نام شما">
+            <input type="text" id="address" placeholder="آدرس">
+            <select id="food">
+                <option>کباب</option>
+                <option>جوجه</option>
+                <option>جگر</option>
+                <option>بال و پاچین</option>
+                <option>چربی</option>
+            </select>
+            <button onclick="sendOrder()">ثبت سفارش</button>
+        </div>
+
+        <p id="orderMsg"></p>
+    </section>
+
+    <!-- تماس -->
+    <footer id="contact">
+        <h3>تماس با ما</h3>
+        <p>📞 0938-128-5228</p>
+        <p>اینستاگرام: @kebab_khani</p>
+        <p>تمام حقوق محفوظ است © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+<script>
+    var a=window.confirm("؟ایا شما در کاشمر زندگی میکنید");
+    if(a==true)
+       window.alert("سفارش پذیرفته میشود");
+    else
+       window.alert("سفارش پذیرفته نمیشود");
+</script>
+</html>
